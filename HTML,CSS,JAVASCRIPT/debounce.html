@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #movies{
+            border: none;
+            /* border:solid 1px black; */
+            height:200px;
+            width:205px;
+            overflow: scroll;
+        }
+        #movies1{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: auto;
+            gap:40px;
+        }
+        #movies1>div{
+            border: 1px solid red;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+        }
+      img{
+            width: 100%;
+        }
+        input{
+            width:200px;
+        }
+    </style>
+</head>
+<body>
+    <input oninput="debounce(main,1000)"type="text"id="text"/>
+
+    <div id="movies"></div>
+    <div id="movies1"></div>
+</body>
+<script src="./index.js"></script>
+</html>
