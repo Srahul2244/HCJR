@@ -13,7 +13,7 @@ let res=await fetch(`https://jsonplaceholder.typicode.com/posts`,{
    
     getData(data)
 }
-
+/*this is dom-manipulation */
 get()
 
 let blog=document.querySelector(".blog");
